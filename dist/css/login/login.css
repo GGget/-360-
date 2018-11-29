@@ -1,0 +1,181 @@
+.loginwrap {
+  height: 715px;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.loginwrap .logintop {
+  height: 550px;
+  width: 100%;
+  background: url("../../img/login/t0118feb0c6cd63e5ba.jpg") no-repeat;
+  background-position: center center;
+}
+
+.loginwrap .logintop .topwrap {
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+.loginwrap .logintop .topwrap .logo {
+  position: absolute;
+  width: 300px;
+  height: 57px;
+  background: url("../../img/login/t017e023359489ada69.png") no-repeat;
+  top: 30px;
+  left: 60px;
+}
+
+.loginwrap .logintop .topwrap .mainlogo {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  background: url("../../img/login/t019a1f31118714bf2c.png") no-repeat;
+  top: -50px;
+  background-size: 600px 600px;
+}
+
+.loginwrap .logintop .topwrap .mainlogo .rander {
+  width: 600px;
+  height: 600px;
+  background: url("../../img/login/t01757f52d5c73d8964.png") no-repeat;
+  background-size: 600px 600px;
+  position: absolute;
+  transition: 80s;
+}
+
+.loginwrap .logintop .topwrap .form {
+  width: 360px;
+  height: 419px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 68px;
+  left: 915px;
+  padding: 40px 30px;
+}
+
+.loginwrap .logintop .topwrap .form .loginselect {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.loginwrap .logintop .topwrap .form .loginselect .options {
+  float: left;
+}
+
+.loginwrap .logintop .topwrap .form .loginselect .select1 {
+  height: 25px;
+  color: #36b447;
+  border-bottom: solid 1px #36b447;
+  margin-left: 40px;
+  font-size: 20px;
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+
+.loginwrap .logintop .topwrap .form .loginselect .middles {
+  width: 1px;
+  background-color: #999;
+  height: 18px;
+  margin: 6px 10px 0;
+}
+
+.loginwrap .logintop .topwrap .form .loginselect .select2 {
+  height: 25px;
+  font-size: 20px;
+}
+
+.loginwrap .logintop .topwrap .form .login-form form .login-input {
+  width: 300px;
+  height: 42px;
+  margin-top: 30px;
+  border-radius: 2px;
+}
+
+.loginwrap .logintop .topwrap .form .login-form form .login-user {
+  line-height: 20px;
+  outline-color: #36b447;
+  padding: 10px;
+  border: solid 1px #ddd;
+  color: #666;
+}
+
+.loginwrap .logintop .topwrap .form .login-form form .submitbut {
+  outline: none;
+  border: none;
+  background-color: #36b447;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.loginwrap .logintop .topwrap .form .tip-form {
+  margin-top: 10px;
+  height: 21px;
+  width: 100%;
+}
+
+.loginwrap .logintop .topwrap .form .tip-form .find {
+  margin-left: 200px;
+}
+
+.loginwrap .logintop .topwrap .form .footer-form .otherway {
+  height: 10px;
+  width: 100%;
+}
+
+.loginwrap .loginfooter {
+  height: 165px;
+  width: 100%;
+  text-align: center;
+}
+
+.loginwrap .loginfooter .entrance-list {
+  width: 1200px;
+  height: 80px;
+  margin: 20px auto 0;
+}
+
+.loginwrap .loginfooter .entrance-list a {
+  display: block;
+  float: left;
+  height: 80px;
+  width: 270px;
+  margin-left: 30px;
+  color: #58cfa6;
+}
+
+.loginwrap .loginfooter .entrance-list a h3 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.loginwrap .loginfooter .entrance-list a p {
+  color: #58cfa6;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.loginwrap .loginfooter .entrance-list a:hover {
+  color: #36b447;
+  background-color: #ecfef8;
+}
+
+.loginwrap .loginfooter .entrance-list a:hover p {
+  color: #36b447;
+}
+
+.loginwrap .loginfooter h5 {
+  color: #bbb;
+}
+
+.loginwrap .loginfooter .deep {
+  margin-top: 40px;
+}
+
+body:hover .rander {
+  transform: rotate(14400deg);
+}

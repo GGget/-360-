@@ -1,0 +1,442 @@
+.mainbox {
+  background-color: #F5F5F5;
+  width: 100%;
+  min-height: 100px;
+}
+
+.main {
+  background-color: #F5F5F5;
+  width: 100%;
+  min-height: 100px;
+}
+
+.main .miaosha {
+  margin-top: 20px;
+  height: 260px;
+  width: 100%;
+  background-image: url("../img/flashsale-bg.png");
+  background-position-x: -18px;
+}
+
+.main .miaosha .wrap {
+  height: 245px;
+}
+
+.main .miaosha .wrap .showtime {
+  float: left;
+  width: 210px;
+  height: 245px;
+  padding-left: 45px;
+  color: white;
+  font-size: 20px;
+}
+
+.main .miaosha .wrap .showtime p {
+  padding-top: 100px;
+  color: white;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.main .miaosha .wrap .showtime span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #fcb800;
+  border-radius: 2px;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 4px 0 0;
+  color: white;
+  font-size: 20px;
+}
+
+.main .miaosha .wrap .miaosha-list {
+  float: left;
+  width: 1025px;
+  height: 245px;
+}
+
+.main .miaosha .wrap .miaosha-list .goods-list {
+  float: left;
+  margin: 15px 15px 0 0;
+  padding: 0 15px;
+  width: 190px;
+  height: 230px;
+  background-color: white;
+}
+
+.main .miaosha .wrap .miaosha-list .goods-list a .img-box {
+  margin: 0 20px;
+  padding: 15px 0;
+}
+
+.main .miaosha .wrap .miaosha-list .goods-list a .img-box img {
+  height: 120px;
+  width: 120px;
+}
+
+.main .miaosha .wrap .miaosha-list .goods-list a h5 {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #666;
+}
+
+.main .miaosha .wrap .miaosha-list .goods-list a p {
+  font-size: 18px;
+  color: red;
+  padding: 10px 0 7px 0;
+  text-align: center;
+}
+
+.main .miaosha .wrap .miaosha-list .goods-list a p em {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.main .miaosha .wrap .miaosha-list .goods-list a:hover {
+  color: #666;
+}
+
+.main .danpin {
+  width: 100%;
+}
+
+.main .danpin .wrap .danpin-scroll {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.main .danpin .wrap .danpin-scroll .prevbutton {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  font-size: 5px;
+  display: none;
+}
+
+.main .danpin .wrap .danpin-scroll .nextbutton {
+  font-size: 5px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 130px;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: none;
+}
+
+.main .danpin .wrap .danpin-scroll .danpin-menu {
+  display: block;
+  width: 5271px;
+  position: absolute;
+  left: 0;
+}
+
+.main .danpin .wrap .danpin-scroll .danpin-menu .danpin-list {
+  float: left;
+  width: 236px;
+  height: 300px;
+  padding: 0 35px;
+  margin-right: 15px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.main .danpin .wrap .danpin-scroll .danpin-menu .danpin-list:hover {
+  box-shadow: 0 0 5px 2px #ddd;
+}
+
+.main .danpin .wrap .danpin-scroll .danpin-menu .danpin-list .imgbox img {
+  height: 150px;
+  width: 150px;
+}
+
+.main .danpin .wrap .danpin-scroll .danpin-menu .danpin-list h4 {
+  color: red;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.main .floor .floorbox {
+  height: 630px;
+  width: 100%;
+}
+
+.main .floor .floorbox .floorbox-left {
+  float: left;
+  width: 236px;
+}
+
+.main .floor .floorbox .floorbox-left .floorbox-left-top img {
+  height: 460px;
+}
+
+.main .floor .floorbox .floorbox-left .floorbox-left-bottom img {
+  margin: 15px 0;
+  height: 140px;
+}
+
+.main .floor .floorbox .floor-right {
+  float: left;
+  width: 1004px;
+  height: 600px;
+}
+
+.main .floor .floorbox .floor-right ul {
+  height: 600px;
+}
+
+.main .floor .floorbox .floor-right ul a .floor-right-list {
+  float: left;
+  width: 236px;
+  height: 300px;
+  padding: 0 35px;
+  margin: 0 0 15px 15px;
+  background-color: #fff;
+}
+
+.main .floor .floorbox .floor-right ul a .floor-right-list:hover {
+  box-shadow: 0 0 5px 2px #ddd;
+}
+
+.main .floor .floorbox .floor-right ul a .floor-right-list .imgbox img {
+  height: 150px;
+  width: 150px;
+}
+
+.imgbox {
+  padding: 30px 8px 40px;
+  height: 220px;
+}
+
+.price {
+  color: red;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.footer {
+  background-color: #fff;
+  width: 100;
+}
+
+.footer .footer-banner {
+  border-top: solid 1px #E8E8E8;
+  border-bottom: solid 1px #E8E8E8;
+  padding: 15px 0;
+}
+
+.footer .footer-banner .footer-banner-nav {
+  width: 1240px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.footer .footer-banner .footer-banner-nav .nav-item {
+  float: left;
+  width: 410px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer .footer-banner .footer-banner-nav .nav-item i {
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer .footer-containerbox {
+  border-bottom: solid 10x #E8E8E8;
+}
+
+.footer .footer-containerbox .footer-container {
+  height: 280px;
+  padding: 30px 0;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.footer .footer-containerbox .footer-container .footer-con {
+  margin-left: 100px;
+  float: left;
+  width: 16%;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-first {
+  height: 40px;
+  color: #302E33;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item {
+  height: 30px;
+  line-height: 30px;
+  color: #848484;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item a {
+  color: #848484;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item-img {
+  height: 36px;
+  position: relative;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item-img .img-erweima {
+  position: absolute;
+  left: 50px;
+  top: -22px;
+  height: 80px;
+  width: 80px;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item-img a img {
+  height: 36px;
+  width: 36px;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item-img2 {
+  margin-top: 50px;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item-num {
+  font-size: 20px;
+  color: #4ABA00;
+  height: 40px;
+  line-height: 40px;
+}
+
+.footer .footer-containerbox .footer-container .footer-con .con-item-num span {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #4ABA00;
+}
+
+.footer .footer-containerbox .footer-container .con-connect {
+  width: 20%;
+}
+
+.footer .footer-containerbox .footer-container .con-erweima {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.footer .footer-copyright {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.middlebox {
+  border-left: solid 1px #E8E8E8;
+  border-right: solid 1px #E8E8E8;
+}
+
+.roll {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: top;
+  margin: 10px 10px 0 0;
+  border: 2px solid #23AC38;
+  border-radius: 20px;
+  color: #23AC38;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.right-leader {
+  height: 100%;
+  width: 10px;
+  position: fixed;
+  top: 0;
+  border-right: solid 7px #fff;
+  right: 0px;
+  z-index: 10;
+  background-color: #666;
+}
+
+.right-leader ul {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+}
+
+.right-leader ul .right-leader-item {
+  height: 40px;
+  width: 43px;
+  background: #666;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.right-leader ul .right-leader-item:hover {
+  background-color: #23AC38;
+}
+
+.right-leader ul .leader-weibo {
+  margin: 3px 0;
+}
+
+.right-leader ul .leader-totop {
+  display: none;
+}
+
+.louti-box {
+  position: fixed;
+  left: 7px;
+  top: 100px;
+  z-index: 10;
+  background-color: #32333d;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.louti-box .louti .louti-list {
+  width: 45px;
+  height: 50px;
+  padding: 10px 5px 0;
+  cursor: pointer;
+}
+
+.louti-box .louti .louti-list:hover {
+  background-color: #23AC38;
+}
+
+.louti-box .louti .louti-list:hover p {
+  border-bottom: solid 1px #23AC38;
+}
+
+.louti-box .louti .louti-list p {
+  padding-bottom: 10px;
+  height: 39px;
+  border-bottom: solid 1px #41424e;
+  text-align: center;
+  line-height: 14px;
+  color: white;
+}
+
+.louti-box .louti .louti-list-last {
+  width: 45px;
+  height: 50px;
+  padding: 0 5px 10px;
+  cursor: pointer;
+}
+
+.hover {
+  background-color: #23ac38;
+}

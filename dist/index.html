@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type='text/css' href="css/bootstrap.css">
+    <link rel="stylesheet" type='text/css' href="css/swiper-4.3.5.min.css">
+    <link rel="stylesheet" type='text/css' href="css/common.css ">
+    <link rel="stylesheet" type='text/css' href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" type='text/css' href="css/index.css ">
+    <link rel="stylesheet" type='text/css' href="css/main.css">
+    <script id="leftmenu" type="text/html">
+
+    </script>
+    
+    <script id="danpin-list" type="text/html">
+        <% for(var i=0; i<5; i++) { %>
+        <li class="danpin-list">
+            <div class="imgbox">
+                <img src="{{imgright1[i]}}" alt="" />
+            </div>
+            <h5>{{tip1[i]}}</h5>
+            <h4>{{price1[i]}}</h4>
+        </li>
+        <% }%>
+        <% for(var i=0; i<5; i++) { %>
+            <li class="danpin-list">
+                <div class="imgbox">
+                    <img src="{{imgright2[i]}}" alt="" />
+                </div>
+                <h5>{{tip2[i]}}</h5>
+                <h4>{{price2[i]}}</h4>
+            </li>
+            <% }%>
+    </script>
+    <script id="floorbox" type="text/html">
+        <% for(var i=0; i<6; i++) { %>
+        <div class="wrap floor">
+                <h2>{{title[i]}}</h2>
+                <div class="floorbox">
+                    <div class="floorbox-left">
+                        <a class="floorbox-left-top" href=""><img src="{{imglefttop[i]}}"
+                                alt=""></a>
+                        <a class="floorbox-left-bottom" href=""><img src="{{imgleftbottom[i]}}"
+                                alt=""> </a>
+                    </div>
+                    <div class="floor-right">
+                        <ul>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright1[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip1[i]}}</h5>
+                                    <h4 class="price">{{price1[i]}}</h4>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright2[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip2[i]}}</h5>
+                                    <h4 class="price">{{price2[i]}}</h4>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright3[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip3[i]}}</h5>
+                                    <h4 class="price">{{price3[i]}}</h4>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright4[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip4[i]}}</h5>
+                                    <h4 class="price">{{price4[i]}}</h4>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright5[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip5[i]}}</h5>
+                                    <h4 class="price">{{price5[i]}}</h4>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright6[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip6[i]}}</h5>
+                                    <h4 class="price">{{price6[i]}}</h4>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright7[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip7[i]}}</h5>
+                                    <h4 class="price">{{price7[i]}}</h4>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="floor-right-list">
+                                    <div class="imgbox">
+                                        <img src="{{imgright8[i]}}" alt="">
+                                    </div>
+                                    <h5 class="jianjie">{{tip8[i]}}</h5>
+                                    <h4 class="price">{{price8[i]}}</h4>
+                                </li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <% } %>
+    </script>
+</head>
+
+<body>
+    <!-- 主体内容 -->
+    <div class="container">
+        <!--头部-->
+        <div class="row">
+            <div class="col col-lg-12">
+
+                <div class="header ">
+                    <!--吸顶图-->
+                    <div class="maxtop-img">
+                        <img src="http://img.i360mall.com/e39ec90c-56b0-4cda-ad72-2ef66de893bd.jpg" alt="">
+                    </div>
+                    <!-- 头部栏 -->
+                    <div class=" header-top ">
+                        <div class="header-top-container">
+                            <ul class="header-top-container-left">
+                                <li><a href="">帮助中心</a></li>
+                                <li><a href="">收藏本站</a></li>
+                            </ul>
+                            <ul class="header-top-container-right">
+                                <li class="head-show"><a href=""><img src="img/head-icons1.png" alt=""> 手机360商城</a></li>
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="http://localhost:8080/register.html">注册</a></li>
+                                <li><a href="http://localhost:8080/login.html">登录</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 搜索栏 -->
+                    <div class="header-search ">
+                        <div class=" logo-img-box"><a href="#"> <img class="logo-img" src="img/logo.png" /></a>
+                        </div>
+                        <div class="searchshop-box">
+                            <div class="searchtip">
+                                <span>N7 pro</span>
+                                <span>N7</span>
+                                <span>儿童手表</span>
+                                <span>行车记录仪</span>
+                                <span>摄像机夜视版</span>
+
+                            </div>
+                            <div class="search-box">
+                                <input class="search-input" type="text" placeholder="N7 pro新品" />
+                                <input class="search-submit" type="submit" value=" " />
+                            </div>
+                            <div class="shop-box">
+                                <div class="shopcart-icon"></div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的购物车
+                                <span class="shopcart-num">(0)</span>
+                                <div class="shopcart-container">
+                                    请<a href="">登录</a> 后查看您的购物车。
+                                </div>
+                                <div class="hiddenline"></div>
+                            </div>
+                            <div class="app-erweima head-show">
+                                <table>
+                                    <tr>
+                                        <td><img class="app-erweima-img" src="img/qcode_app.jpg" alt=""></td>
+                                        <td class="app-erweoma-word">
+                                            <p>手机360商城</p>
+                                            <p style="color: red">扫码下载</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 导航栏 -->
+                    <div class="nav-section">
+                        <ul class="nav-ul">
+                            <li class="nav-first">
+
+                                <a class=" nav-first-a" href="">
+                                    全部智能酷品
+                                </a>
+                                <div class="nav-icon"></div>
+                            </li>
+                            <li><a class="nav-a a-active " href="">手机</a></li>
+                            <li><a class="nav-a " href="">行车记录仪</a></li>
+                            <li><a class="nav-a " href="">儿童手表</a></li>
+                            <li><a class="nav-a " href="">摄像机</a></li>
+                            <li><a class="nav-a " href="">路由器</a></li>
+                            <li><a class="nav-a " href="">社区</a></li>
+                            <li><a class="nav-a " href="">扫地机器人 </a></li>
+                        </ul>
+                    </div>
+                    <!-- 动图 -->
+                    <div class="dongtu">
+                        <img src="img/c24da133-0a0d-4113-b524-de21cfe15384.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--轮播图区域-->
+        <div class="row">
+            <div class="col col-lg-12">
+                <div class="index ">
+                    <!--轮播图-->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a><img src="http://img.i360mall.com/38bcefa6-cfb1-4356-8c52-096ef97704f9.jpg" /></a></div>
+                            <div class="swiper-slide"><a><img src="http://img.i360mall.com/2b2d0b6d-c4a5-4505-ac5a-9b7a478deb05.jpg" /></a></div>
+                            <div class="swiper-slide"><a><img src="http://img.i360mall.com/00dcec62-4c06-4faa-9768-e47417d5670e.jpg" /></a></div>
+                        </div>
+                        <!-- 分页器 -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- 导航按钮 -->
+                        <div class="swiper-button-prev"><span class="iconfont icon-xiangzuo "></span></div>
+                        <div class="swiper-button-next"><span class="iconfont icon-xiangyou  "></span></div>
+                    </div>
+                    <!-- 左侧菜单列表 -->
+                    <div class="menu-left">
+                        <ul>
+                            <li class=menulist><span class="iconfont icon-shouji icon-menu"></span><span class="menu-name">手机/配件</span>
+                            </li>
+                            <li class=menulist><span class="iconfont icon-shoubiao icon-menu"></span><span class="menu-name">数码</span>
+                            </li>
+                            <li class=menulist><span class="iconfont icon-diannao icon-menu"></span><span class="menu-name">电脑周边</span>
+                            </li>
+                            <li class=menulist><span class="iconfont icon-TFneicunqia icon-menu"></span><span class="menu-name">移动存储</span>
+                            </li>
+                            <li class=menulist><span class="iconfont icon-qiche icon-menu"></span><span class="menu-name">汽车用品</span>
+                            </li>
+                            <li class=menulist><span class="iconfont icon-electrical-jf icon-menu"></span><span class="menu-name">家用电器</span>
+                            </li>
+                            <li class=menulist><span class="iconfont icon-huwaiyundong icon-menu"></span><span class="menu-name">户外/运动</span>
+                            </li>
+                            <li class=menulist><span class="iconfont icon-wenjubangongyongpin icon-menu"></span><span
+                                    class="menu-name">教育/文具</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- 右侧方块 -->
+                    <div class="squ squ-top ">
+                        <div class="squ-top-list">
+                            <h5 class="toutiao">商城头条</h5>
+                            <hr>
+                            <ul>
+                                <li><a href="">全场京东物流，正品保障！</a> </li>
+                                <li><a href="">约会新品，缤纷盛夏</a> </li>
+                                <li><a href="">暑机大作战→</a> </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <ul class="squ-top-guide">
+                            <li><a href="">
+                                    <p class="iconfont icon-4 icon-menu2"></p>
+                                    <h5 class="guide-name">手机</h5>
+                                </a> </li>
+                            <li class="middle"><a href="">
+                                    <p class="iconfont icon-zhinenghua icon-menu"></p>
+                                    <h5 class="guide-name">智能</h5>
+                                </a> </li>
+                            <li><a href="">
+                                    <p class="iconfont icon-qiche icon-menu"></p>
+                                    <h5 class="guide-name">汽车</h5>
+                                </a> </li>
+                        </ul>
+                    </div>
+                    <div class="squ squ-bottom ">
+                        <img src="img/c3d36cf3-d4ba-4773-b576-04d112d45931.jpg" alt="" class="squ-bottom-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--商品区域-->
+        <div class="row">
+            <div class="col col-lg-12">
+                <div class="main">
+                    <!-- 限时秒杀 -->
+                    <div class="miaosha">
+                        <div class="wrap">
+                            <div class="showtime">
+                                <p>当前场次剩余时间</p>
+                                <span id="hour_">
+                                    01
+                                </span>:
+                                <span id="minute_">
+                                    24
+                                </span>:
+                                <span id="second_">
+                                    33
+                                </span>
+
+                            </div>
+                            <div class="miaosha-list">
+                                <ul>
+                                    <li class="goods-list">
+                                        <a href="">
+                                            <div class="img-box">
+                                                <img src="img/5a42146cN9a0bba81.jpg" alt="">
+                                            </div>
+                                            <h5>
+                                                【2件装】蜂翼 苹果X/8/7/6s/6数据线 1.5米白色
+                                            </h5>
+                                            <p>
+                                                ￥12.90
+                                                <em>
+                                                    ￥25.90
+                                                </em>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="goods-list">
+                                        <a href="">
+                                            <div class="img-box">
+                                                <img src="img/goods/5b7bb29cNf9abc1ed.jpg" alt="">
+                                            </div>
+                                            <h5>
+                                                360手机 N7 Pro 玛瑙黑色
+                                            </h5>
+                                            <p>
+                                                ￥1999.00
+                                                <em>
+                                                    ￥2099.90
+                                                </em>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="goods-list">
+                                        <a href="">
+                                            <div class="img-box">
+                                                <img src="http://img14.360buyimg.com/N2/jfs/t16738/293/450474693/165314/7de5adfb/5a7c2888Na5f69fee.jpg" alt="">
+                                            </div>
+                                            <h5>
+                                                360手机,N6 Pro深海蓝色
+                                            </h5>
+                                            <p>
+                                                ￥1899.00
+                                                <em>
+                                                    ￥1999.00
+                                                </em>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="goods-list">
+                                        <a href="">
+                                            <div class="img-box">
+                                                <img src="http://img12.360buyimg.com/N2/jfs/t2515/45/552070955/88979/196f93bd/565680e9N79cfe1ec.jpg" alt="">
+                                            </div>
+                                            <h5>
+                                                索尼ICD-UX565F数码录音棒                                            </h5>
+                                            <p>
+                                                ￥1299.00
+                                                <em>
+                                                    ￥1499.00
+                                                </em>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="goods-list">
+                                        <a href="">
+                                            <div class="img-box">
+                                                <img src="http://img14.360buyimg.com/N2/jfs/t2071/293/2344193368/203724/ff45d60d/56cd2354N0751be84.jpg" alt="">
+                                            </div>
+                                            <h5>
+                                                樱桃(Cherry)游戏办公机械键盘
+                                            </h5>
+                                            <p>
+                                                ￥559.00
+                                                <em>
+                                                    ￥659.00
+                                                </em>
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 明星单品 -->
+                    <div class="danpin">
+                        <div class="wrap danpin-warp">
+                            <h2>明星单品</h2>
+                            <div class="danpin-scroll">
+                                <div class="prevbutton">
+                                    <span class="iconfont icon-xiangzuo"></span>
+                                </div>
+                                <div class="nextbutton">
+                                    <span class="iconfont icon-xiangyou"></span>
+                                </div>
+                                <ul class="danpin-menu">
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 商品楼层 -->
+                    <div class="mainbox">
+                        
+                    </div>
+                    
+        <!--尾部-->
+        <div class="row">
+            <div class="col col-lg-12">
+                <div class="footer">
+
+                    <div class="footer-banner">
+                        <div class="footer-banner-nav">
+                            <div class="nav-item">
+                                <i class="roll">7</i>
+                                7天无理由退货
+                            </div>
+                            <div class="nav-item middlebox">
+                                <i class="roll">15</i>
+                                质量问题15天换货
+                            </div>
+                            <div class="nav-item">
+                                <i class="roll">包</i>
+                                满99包邮
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-containerbox">
+                        <div class="footer-container">
+                            <ul class="footer-con">
+                                <li class="con-first ">帮助中心</li>
+                                <li class="con-item"><a href="">用户登录与密码找回</a></li>
+                                <li class="con-item"><a href="">用户注册协议</a></li>
+                                <li class="con-item"><a href="">购买指南</a></li>
+                                <li class="con-item"><a href="">支付方式</a></li>
+                                <li class="con-item"><a href="">配送说明</a></li>
+                                <li class="con-item"><a href="">用户注销</a></li>
+
+                            </ul>
+                            <ul class="footer-con">
+                                <li class="con-first ">售后服务</li>
+                                <li class="con-item"><a href="">7天无理由退货</a></li>
+                                <li class="con-item"><a href="">质量问题15日内换货</a></li>
+                                <li class="con-item"><a href="">保修条款</a></li>
+                                <li class="con-item"><a href="">售后服务运费规则</a></li>
+
+                            </ul>
+                            <ul class="footer-con con-connect">
+                                <li class="con-first ">联系我们</li>
+                                <li class="con-item-num">400-6822-360</li>
+                                <li class="con-item">周一至周五 9:00-18:00</li>
+                                <li class="con-item-num">400-0111-366 <span>(手机类产品)</span> </li>
+                                <li class="con-item">周一至周五 9:00-21:00</li>
+                                <li class="con-item">(仅收市话费)</li>
+
+                            </ul>
+                            <ul class="footer-con con-erweima">
+                                
+                                <li class="con-item-img"><a href=""><img  src="img/footer/weixin_icon.png" alt=""></a><img class="img-erweima" src="img/footer/qcode_app.jpg" alt=""> </li>
+                                <li class="con-item-img con-item-img2"><a href=""><img src="img/footer/weibo_icon.png" alt=""></a><img class="img-erweima" src="img/footer/wbewm.jpg" alt=""></li>
+                            </ul>       
+                        </div> 
+                    </div>
+                    <div class="footer-copyright">
+                            360商城©2013-2018 360公司版权所有 京ICP备17017089号 京公网安备11000002000006号
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧栏 -->
+    <div class="right-leader">
+        <ul>
+            <li class="right-leader-item leader-weixin" ><img src="img/right/lswechat.png" alt=""></li>
+            <li class="right-leader-item leader-weibo" ><img src="img/right/lsstore.png" alt=""></li>
+            <li class="right-leader-item leader-totop" ><img src="img/right/totopnew.png" alt=""> </li>
+            
+        </ul>
+    </div>
+    <!-- 左楼梯 -->
+    <div class="louti-box">
+        <ul class="louti">
+            <li class="louti-list"><p>限时秒杀</p></li>
+            <li class="louti-list"><p>明星单品</p></li>
+            <li class="louti-list"><p>手机</p></li>
+            <li class="louti-list"><p>数码</p></li>
+            <li class="louti-list"><p>车品</p></li>
+            <li class="louti-list"><p>家电</p></li>
+            <li class="louti-list"><p>电脑</p></li>
+            <li class="louti-list"><p>推荐</p></li>
+            <li class="louti-list-last"><img src="img/elevator-totop.png" alt=""></li>
+
+        </ul>
+    </div>
+</body>
+<script data-main="index.js" src="js/lib/require.js"></script>
+
+</html>

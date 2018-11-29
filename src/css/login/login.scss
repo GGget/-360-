@@ -1,0 +1,165 @@
+.loginwrap{
+    height: 715px;
+    width: 100%;
+    background-color: #f6f6f6;
+    .logintop{
+        height: 550px;
+        width:100%;
+        background: url("../../img/login/t0118feb0c6cd63e5ba.jpg")no-repeat;
+        background-position: center center;
+        .topwrap{
+            width: 1200px;
+            height:550px;
+            margin:0 auto;
+            
+            .logo{
+                position: absolute;
+                width: 300px;
+                height: 57px;
+                background: url("../../img/login/t017e023359489ada69.png")no-repeat;
+                top:30px;
+                left: 60px;
+            }
+            .mainlogo{
+                width:600px;
+                height: 600px;
+                position: absolute;
+                background: url("../../img/login/t019a1f31118714bf2c.png")no-repeat;
+                top:-50px;
+                background-size: 600px 600px;
+                .rander{
+                    width:600px;
+                    height: 600px;
+                    background: url("../../img/login/t01757f52d5c73d8964.png")no-repeat;
+                    background-size: 600px 600px;
+                    position: absolute;
+                    transition:80s;
+                    
+                }
+                
+            }
+            .form{
+                width: 360px;
+                height: 419px;
+                background-color: white;
+                border-radius: 4px;
+                box-shadow: 0 0 40px 1px rgba(0,0,0,0.3);
+                position: absolute;
+                top:68px;
+                left:915px;
+                padding:40px 30px ;
+                .loginselect{
+                    height: 25px;
+                    width:100%;
+                    margin-bottom:5px;
+                    .options{
+                        float: left;
+                    }
+                    .select1{
+                        height:25px;
+                        color:#36b447;
+                        border-bottom: solid 1px #36b447;
+                        margin-left:40px;
+                        font-size:20px;
+                        padding-bottom: 4px;
+                        font-weight: 500;
+                    }
+                    .middles{
+                        width: 1px;
+                        background-color: #999;
+                        height: 18px;
+                        margin:6px 10px 0;
+                    }
+                    .select2{
+                        height:25px;
+                        
+                        font-size:20px;
+                    }   
+                }
+                .login-form{
+                    form{
+                        .login-input{
+                            width: 300px;
+                            height: 42px;
+                            margin-top:30px;
+                            border-radius:2px;
+                        }
+                        .login-user{
+                            line-height: 20px;
+                            outline-color: #36b447;
+                            padding: 10px;
+                            border:solid 1px #ddd;
+                            color:#666;
+                        }
+                        .submitbut{
+                            outline: none;
+                            border:none;
+                            background-color:#36b447;
+                            color:white;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .tip-form{
+                    margin-top:10px;
+                    height:21px;
+                    width:100%;
+                    .find{
+                        margin-left:200px;
+                    }
+                }
+                .footer-form{
+                    .otherway{
+                        height:10px;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+    .loginfooter{
+        height:165px;
+        width:100%;
+        text-align: center;
+        .entrance-list{
+            width: 1200px;
+            height: 80px;
+            margin: 20px auto 0;
+            a{
+                display: block;
+                float: left;
+                height: 80px;
+                width: 270px;
+                margin-left: 30px;
+                color: #58cfa6;
+                h3{
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+                p{
+                color: #58cfa6;
+                font-size: 14px;
+                margin-top: 4px;
+                }
+                &:hover{
+                    color: #36b447;
+                    background-color: #ecfef8;
+                }
+                &:hover p{
+                    color: #36b447;
+                }
+            }
+        }
+        h5{
+            color:#bbb;
+        }
+        .deep{
+            margin-top: 40px;
+        }
+
+    }
+}
+body:hover .rander{
+    transform: rotate(14400deg);
+}

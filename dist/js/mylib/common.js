@@ -1,0 +1,1 @@
+define([""],function(){return{randomColor(){var a=randomInt(0,255),b=randomInt(0,255),c=randomInt(0,255);return"rgb("+a+","+b+","+c+")"},section(a,b,c){return Math.max(b,Math.min(c,a))},randomInt(a,b){return Math.floor(Math.random()*(b-a))+a},addEventHandler(a,b,c,d){a.addEventListener?a.addEventListener(b,c,d):a.attachEvent("on"+b,c)}}});

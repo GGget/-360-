@@ -1,0 +1,40 @@
+
+//透明度
+@mixin opacity($val){
+    opacity: $val/100;
+    filter:alpha(opacity=$val);
+};
+//清除浮动
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        font-size: 0;
+        height: 0;
+        overflow: hidden;
+        clear: both;
+    }
+}
+//三角
+@mixin triangle($dir, $width:10px, $color:black) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $width;
+
+    @if $dir==bottom {
+        border-color: $color transparent transparent transparent;
+    }
+
+    @if $dir==top {
+        border-color: transparent transparent $color transparent;
+    }
+
+    @if $dir==left {
+        border-color: transparent $color transparent transparent;
+    }
+
+    @if $dir==right {
+        border-color: transparent transparent transparent $color;
+    }
+}

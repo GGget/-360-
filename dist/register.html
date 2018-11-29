@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register/register.css">
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="headbox">
+                <div class="header-container">
+                        <a href="">
+                            <span class="fuck">
+                                <img src="img/register/uc-i360-logo.png" alt="">
+                            </span>
+                        </a>
+            
+                        <a href="">
+                            <span class="title">注册账号</span>
+                        </a>
+                        <a class="login" href=""><span>登陆</span></a>
+            
+            
+                    </div>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="register-title">
+            注册360账号
+        </div>
+        <div class="register-container">
+            <form class="register-box">
+                <div class="input-user">
+                    <span class="input-user-icon" "><img src=" img/register/uc-account-icon.png" alt=""> </span>
+                    <input type="text" id="username" name="username" class="input-user-value" placeholder="请输入要注册的手机号">
+                </div>
+                <div class=" wrong"></div>
+                <div class="input-user">
+                    <span class="input-user-icon" "><img src=" img/register/uc-password-icon.png" alt=""> </span>
+                    <input type="password" id="password" name="password" class="input-user-value" placeholder="密码请设置8~20个字符" >
+                </div>
+                <div class=" wrong"></div>
+                <div class="yanzhengma">
+                        <div class="input-user-yanzhengma">
+                                <input class="input-yanzhengma-value" type="text" placeholder="请输入验证码" id="yanzhengma" name="yanzhengma">
+                        </div>
+                        <div class="yanzhengma-img">
+                            <img class="quc-captcha-img quc-captcha-change" alt="验证码" title="点击更换" tabindex="99" src="https://passport.360.cn/captcha.php?m=create&amp;app=i360&amp;scene=strictreg&amp;userip=&amp;level=default&amp;sign=5a63a7&amp;r=1537338101&amp;_=1537338100374">
+                        </div>
+                </div>
+                <div class="wrong"></div>
+                <input type="submit" class="input-user submit" value="下一步">
+                <div class="checkbox-box">
+                    <input type="checkbox" id="agree" name="agree">
+                    阅读并同意
+                    <a href="">"360用户协议"</a>
+                    和
+                    <a href="">"360用户隐私协议"</a>
+                </div>
+                <div class="wrong"></div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="banner-nav">
+            <span class="helpcenter"><a href="">帮助中心</a> </span>
+            <span><a href="">立即申诉</a></span>
+        </div>
+        <p>Copyright©2005-2018 360.CN All Rights Reserved 360安全中心</p>
+        <p>京ICP证080047号[京ICP备08010314号-6]</p>
+        <p><img src="img/footer/wangan-icon.png" alt=""> 京公网安备 11000002000006号</p>
+    </div>
+
+
+
+</body>
+<script data-main="index.js" src="js/lib/require.js"></script>
+<script>
+    //注册页面
+    $.validator.setDefaults({
+            submitHandler: function() {
+                $()
+            }
+        });
+        $().ready(function() {
+            $(".register-box").validate({
+                rules:{
+                    username:{
+                        required:true,
+                        minlength:11,
+                        maxlength:11,
+                        digits:true
+    
+                    },
+                    password:{
+                        required:true,
+                        minlength:8,
+                    },
+                    yanzhengma:"required",
+                    agree:"required"
+                },
+                messages:{
+                    username:{
+                        required:"请输入手机号",
+                        minlength:"手机号格式有误",
+                        maxlength:"手机号格式有误",
+                        digits:"手机号格式有误"
+                    },
+                    password:{
+                        required:"密码不能少于8位字符，请重新输入",
+                        minlength:"密码不能少于8位字符，请重新输入"
+                    },
+                    yanzhengma:"请输入验证码",
+                    agree:"请阅读并同意“用户协议”和“用户隐私政策”"
+                }
+            });
+            //存入cookie
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            document.cookie="name=" + username + "; password="+password;
+        });
+    </script>
+</html>
